@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Idas blogg</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <img src="../Bilder/logo.png" alt="logo"></div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span> <!-- logo for hamburgermeny -->
+            </label> <!-- man bruker label og input ved innskrivningsfelt, men i dette tilfelle handler deg om at når man 
+            klikker på et element vil noe dukke opp -->
+        <input type="checkbox" id="btn">
+            <div>
+                <ul> 
+                    <li> <a href="../index.html">Hjem</a></li> <!-- lager lister for hver undernettside -->
+                    <li>
+                        <label for="btn-1" class="show">Interesser +</label>
+                        <a href="#">Interesser</a>
+                        <input type="checkbox" id="btn-1">
+                        <ul>
+                            <li><a href="reise.html">Reise</a></li>
+                            <li><a href="mote.html">Mote</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <label for="btn-2" class="show">Skole +</label>
+                        <a href="#">Skole</a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="#">To do list</a></li>
+                            <li><a href="#">Regnespill</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="#">Kilder</a></li>
+                </ul>
+
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reise</h1>
+        <h2>Nyeste innlegg</h2>
+       
+        <section class="drømme-d">
+            <div>
+                <div>
+                    <h2>Drømme desitinasjon</h2>
+                    <h4>Mars 21, 2023 14:32</h4>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio hic harum amet ab dolorem mollitia reprehenderit ad doloribus cum, nesciunt neque ratione modi ipsam et sunt consectetur? Porro, ad aliquid!
+                Error ad illo minima molestias, qui reiciendis veniam repudiandae! At alias aspernatur numquam necessitatibus error! Ducimus inventore possimus harum cum blanditiis molestias unde quidem provident eum est aliquam, dolore quod!
+                Ipsum repellendus accusamus aspernatur aperiam quae! Illum veniam iure quas ipsum repellat expedita assumenda ducimus quos eos tempore, aspernatur odio est vel perferendis minus. Odit praesentium explicabo voluptatibus nihil amet.</p>
+            </div>
+
+            <div>
+                <video src="./Bilder og video/strand.mp4" autoplay loop muted></video>
+            </div>
+        </section>
+
+       <section class="bakgrunn">
+        <h2>Ulike steder</h2>
+        <section class="ulikeSteder">
+            <div>
+                <img src="../Bilder/newYork.png" alt="Bilde fra New York">
+                <span class="dato">12.feb 2020</span>
+                <h3>New York</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur dolorum obcaecati iure molestias amet aliquam.</p>
+                </div>
+            </div>
+            <div>
+                <img src="../Bilder/london.png" alt="Bilde fra London">
+                <span class="dato">22.jun 2022</span>
+                <h3>London</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, quisquam. Repudiandae, alias. Ad mollitia perferendis voluptate esse est fugit! Eaque facilis sed, minus sit excepturi maiores nobis quod repellendus optio.</p>
+            </div>
+
+
+            <div>
+                <img src="../Bilder/spania.png" alt="Bilde fra Spania">
+                <span class="dato">14.aug 2022</span>
+                <h3>Spania</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis necessitatibus asperiores officia doloremque modi quod ratione ea impedit animi eaque. Iusto odit distinctio libero aut recusandae eius minus unde officiis!</p>
+            </div>
+        </section>
+        </section>
+        
+
+        <section>
+            <div class="heart-btn">
+                <div class="heart">
+                    <div class="heart-icon"></div>
+                </div>
+                <div class="numb">7</div>
+        </section>
+
+    
+    
+
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <section>
+        <div class="kommentarfelt">
+            <h3>Kommenter</h3>
+          <form action="https://formsubmit.co/idavold05@gmail.com" method="POST"> 
+                <input type="text" class="brukerNavn" required name="full_name" placeholder="Ditt navn...">
+                <input type="email" name="email" class="email" required placeholder="Email adresse...">
+                <textarea name="comment" class="kommentar" cols="30" rows="10" placeholder="Skriv inn din kommentar"></textarea>
+                <button type="submit">Send kommentar</button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h3>Kontakt</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i>Nummer: +47 45027364</p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i>E-post: idavold@gmail.com</p>
+        </div>
+        <div class="foot">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>Medier</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.instagram.com/">Instagram: Ida.Vold</a></p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://nb-no.facebook.com/">Facebook: Ida.Vold</a></p>
+            </div>
+        <div class="foot">
+            <i class="fa-regular fa-user"></i>
+            <h3>Hjelp</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/cookies/">Informasjonskapsler</a></p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/">Personvern</a></p>
+        </div>
+    </footer>
+
+    
+                   
+
+    </section>
+    <script>
+
+ //like knapp
+let numb = document.querySelector(".numb")
+let heart = document.querySelector(".heart")
+let heartIcon = document.querySelector(".heart-icon")
+let heartBtn = document.querySelector(".heart-btn")
+
+let likesAmount = 7;
+
+heartIcon.addEventListener("click", antallLikes)
+
+function antallLikes(){
+    heartIcon.classList.toggle("liked")
+
+    if(heartIcon.classList.contains("liked")){
+        likesAmount+=1
+    }
+    else{
+        likesAmount-=1
+    }
+
+    numb.innerHTML = likesAmount
+} 
+    </script>
+    <script src="../script.js"></script>
+    </body>
