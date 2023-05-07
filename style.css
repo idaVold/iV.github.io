@@ -791,7 +791,7 @@ footer div h3{
 
     main .forsidebilde{
         background-image: url(./Bilder/hovedbilde2.png);
-        width: 50%px;
+        transform: scale(0.5);
     }
 
     /* innledning på hjemsiden */
