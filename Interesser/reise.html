@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Idas blogg</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <img src="../Bilder/logo.png" alt="logo"></div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span> <!-- logo for hamburgermeny -->
+            </label> <!-- man bruker label og input ved innskrivningsfelt, men i dette tilfelle handler deg om at når man 
+            klikker på et element vil noe dukke opp -->
+        <input type="checkbox" id="btn">
+            <div>
+                <ul> 
+                    <li> <a href="../index.html">Hjem</a></li> <!-- lager lister for hver undernettside -->
+                    <li>
+                        <label for="btn-1" class="show">Interesser +</label>
+                        <a href="#">Interesser</a>
+                        <input type="checkbox" id="btn-1">
+                        <ul>
+                            <li><a href="reise.html">Reise</a></li>
+                            <li><a href="mote.html">Mote</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <label for="btn-2" class="show">Skole +</label>
+                        <a href="#">Skole</a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="../Skole/tdl.html">To do list</a></li>
+                            <li><a href="../Skole/regnespill.html">Regnespill</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="../kilder.html">Kilder</a></li>
+                </ul>
+
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reise</h1>
+        <h2>Nyeste innlegg</h2>
+       
+        <section class="drømme-d">
+            <div>
+                <div>
+                    <h2>Drømme desitinasjon</h2>
+                    <h4>Mars 21, 2023 14:32</h4>
+
+                </div>
+                <p>De som kjenner meg godt vet at jeg elsker å reise. Jeg liker å oppleve nye byer, med en annen kultur, på et ukjent sted. Derfor har jeg lyst
+                    til å ta ett friår etter videregående for å jobbe og reise. Jeg gleder meg så mye allerede. For øyeblikket er min drømmedesitinasjon til den greske øyen Skiathos. 
+                    Bildene derifra ser helt fantastiske ut ettersom at havet er så klart. Enda gøyere er det at Skiathos er øya hvor filmen Mamma Mia ble spilt inn.
+                    Det er en av mine favoritt filmer så det hadde vært en drøm å kunne reise ditt. I tillegg er en annen mulighet, når jeg først er der, å 
+                    reise innom noen andre greske øyer.
+                </p>
+            </div>
+
+            <div>
+                <video src="./Bilder og video/strand.mp4" autoplay loop muted></video>
+            </div>
+        </section>
+
+       <section class="bakgrunn">
+        <h2>Ulike steder</h2>
+        <section class="ulikeSteder">
+            <div>
+                <img src="./Bilder og video/newYork.png" alt="Bilde fra New York">
+                <span class="dato">12.feb 2020</span>
+                <h3>New York</h3>
+                <p>New York er jo kjent for å være byen som aldri sover, og det kan jeg være enig i. Absolutt en av mine favoritt byer jeg har besøkt. 
+                    Jeg er så hellig som skal tilbake ditt i høstferien med min gode venn Eirin.
+                </p>
+                </div>
+            </div>
+            <div>
+                <img src="./Bilder og video/london.png" alt="Bilde fra London">
+                <span class="dato">22.jun 2022</span>
+                <h3>London</h3>
+                <p>I sommerferien 2022 var jeg i London med dansestudioet mitt, hvor jeg danser. Da danset vi tre timer hver dag og resten av tiden fikk vi 
+                    til å gjøre hva vi ville. Det var veldig gøy! Vi så blant annet slottet og shoppet.</p>
+            </div>
+
+
+            <div>
+                <img src="./Bilder og video/spania.png" alt="Bilde fra Spania">
+                <span class="dato">14.aug 2022</span>
+                <h3>Spania</h3>
+                <p>Når det er så kaldt her i Norge er det veldig deilig å kunne ha muligheten til å dra til et varmere land.
+                    Familien min er veldig glad i Spania, så vi har vært der noen ganger. Bildet over er tatt fra byen Malaga.
+                </p>
+            </div>
+        </section>
+        </section>
+        
+
+        <section>
+            <div class="heart-btn">
+                <div class="heart">
+                    <div class="heart-icon"></div>
+                </div>
+                <div class="numb">7</div>
+        </section>
+
+    
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <section>
+        <div class="kommentarfelt">
+            <h2>Kommenter</h2>
+          <form action="https://formsubmit.co/idavold05@gmail.com" method="POST"> 
+                <input type="text" class="brukerNavn" required name="full_name" placeholder="Ditt navn...">
+                <input type="email" name="email" class="email" required placeholder="Email adresse...">
+                <textarea name="comment" class="kommentar" cols="30" rows="10" placeholder="Skriv inn din kommentar"></textarea>
+                <button type="submit">Send kommentar</button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h3>Kontakt</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i>Nummer: +47 45027364</p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i>E-post: idavold@gmail.com</p>
+        </div>
+        <div class="foot">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>Medier</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.instagram.com/">Instagram: Ida.Vold</a></p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://nb-no.facebook.com/">Facebook: Ida.Vold</a></p>
+            </div>
+        <div class="foot">
+            <i class="fa-regular fa-user"></i>
+            <h3>Hjelp</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/cookies/">Informasjonskapsler</a></p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/">Personvern</a></p>
+        </div>
+    </footer>
+
+    
+                   
+
+    </section>
+    <script>
+
+ //like knapp
+let numb = document.querySelector(".numb")
+let heart = document.querySelector(".heart")
+let heartIcon = document.querySelector(".heart-icon")
+let heartBtn = document.querySelector(".heart-btn")
+
+let likesAmount = 7;
+
+/* hvis hjerteikonet blir klikket på så vil funksjonen antallLikes bli kaldt */
+heartIcon.addEventListener("click", antallLikes)
+
+function antallLikes(){
+    /* starter med å endre classen til hjerteikonet til liked, hvis den hadde det fra før fjerner den klassen hvis ikke legger 
+    den til classen */
+    heartIcon.classList.toggle("liked")
+
+    /* sjekker om ikonet har classen liked */
+    if(heartIcon.classList.contains("liked")){
+        likesAmount+=1 /* legger til antall likes */
+    }
+    else{ /* hvis den ikke har klassen liked vil den regusere antall likes med 1 */
+        likesAmount-=1
+    }
+
+    /* oppdaterer antall likes*/
+    numb.innerHTML = likesAmount
+} 
+    </script>
+    <script src="../script.js"></script>
+    </body>

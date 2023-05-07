@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&family=Caveat:wght@400;500;600&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box; /* gjør at elementer tar hensyn til kantlinjer. Hvis man setter et element til 100 piksler vil de 100 
+    piksler innkuldere kantlinjer */
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Assistant', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Noto Serif Display', serif;
+}
+
+.overskrift{
+    font-family: 'Noto Serif Display', serif;
+    font-size: 70px;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+
+/* forsidebilde */
+main .forsidebilde{
+    background-image: url(./Bilder/hovedbilde.png);
+    background-color: #73304b;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-blend-mode: multiply; /* gjør at vi kan ha bakgrunnsfarge over bildet */
+    padding-top: 370px;
+    padding-bottom: 370px;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 40px;
+}
+
+main .forsidebilde h3{
+    color: #efc8cf;
+}
+
+/* Navbar */
+nav{
+    background-color: #FEF2F4;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+
+ nav .logo img{
+     width: 60px;
+     height: 60px;
+     margin-left: 20px;
+ }
+
+ nav ul{ 
+     list-style: none; /* fjerner punkter på lister */
+     margin-right: 40px;
+     position: relative;  
+ }
+
+ nav ul li{
+     float: left;
+     display: inline-block; /* gjør at elementene kommer ved siden av hverandre  */
+     background: #FEF2F4;
+ }
+ 
+ nav ul li a{
+     color: black;
+     text-decoration: none;
+     line-height: 70px;
+     font-size: 18px;
+     padding: 8px 15px;
+ }
+ 
+ /* når musen går over interesser eller skole (som er listeelementet li) som har en undermeny (ul) som barn, vil undernettsidene vises.  */
+  nav ul li:hover > ul{ 
+     opacity: 1; /* gjør at elemnetene vises, opacity:0; gjør at det blir gjemt */
+     visibility: visible;
+     top: 70px;  
+ }
+  
+ nav ul ul{
+     position: absolute; 
+     top: 90px; 
+     border-top: 3px solid rgb(235, 155, 189);
+     opacity: 0;
+     visibility: hidden;
+     transition: top .3s; /* hvor lang tid undernettsiden skal bruke for å nå toppen */
+ }
+ 
+ nav ul ul li{
+    position: relative; 
+     width: 150px;
+     float: none;
+     display: list-item; 
+ }
+ 
+ nav ul ul li a{
+      line-height: 50px; 
+ }
+ 
+ .fa-plus{
+     margin-left: 40px;
+     font-size: 15px;
+ }
+ 
+ .show, .icon, #btn, #btn-1, #btn-2{
+     display: none; /* ønsker ikke at input, label og hamburgermenyen elementene skal vises på stor skjerm */
+ }
+ 
+ /* innledning på hjemsiden */
+h1{
+    color: rgb(235, 155, 189);
+}
+
+h1, h2{
+    text-align: center;
+    margin: 20px;
+ }
+
+.innledning{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-left: 60px;
+    margin-right: 60px;   
+}
+
+.imgKjole{
+    width: 320px;
+    height: 370px;
+    border: solid 7px palevioletred;
+}
+
+
+.nytt-prosjekt button, .regnearter button{
+    border-radius: 50%;
+    padding: 10px;
+    margin: 8px;
+    width: 60px;
+    background-color: palevioletred;
+    border: solid 1px white;
+    color: white;
+    cursor: pointer;
+}
+
+.regnearter button{
+    background-color: #FEF2F4;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regnearter button a, .kildeBoks a{
+    text-decoration: none;
+    color: black;
+}
+
+.regnearter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regnespill{
+    padding-bottom: 70px;
+}
+
+.regnespill, .todolist{
+    background-color: palevioletred;
+}
+
+.regnespill section{
+    max-width: 500px;
+    width: 95%;
+    margin: 20px auto;
+    border: 2px solid #FEF2F4;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.regnespill section button{
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #FEF2F4;
+    border: none;
+    color: black;
+    padding: 10px;
+}
+
+.regnespill section button:hover{
+    background-color: rgb(235, 155, 189);
+}
+
+.regnespill section input{
+    padding: 5px 10px;
+}
+
+.lilla:hover{
+    background-color: #d2c7ff;
+}
+
+.rosa:hover{
+    background-color: #ffc0cb;
+}
+
+.beige:hover{
+    background-color: #e8ceb0;
+}
+
+.grønn:hover{
+    background-color: #b1d8b7;
+}
+
+.hboks, .drømme-d, .nytt-prosjekt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.drømme-d, .nytt-prosjekt{
+    margin-bottom: 60px;
+}
+
+h4{
+    padding: 10px;
+}
+
+.drømme-d p, .nytt-prosjekt p{
+    margin-left: 50px;
+}
+
+.drømme-d video{
+    width: 550px;
+}
+
+.hboks{
+    margin: 100px;
+    border: solid black 1px;
+    background-color: #FEF2F4;
+}
+
+.hboks img{
+    width: 450px;
+    height: 300px;
+}
+
+.mitt-liv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.ulikeSteder div .dato{
+    position: relative;
+    top: -490px;
+    left: 0;
+    z-index: 1; /* plasserer teksten over bilde */
+    background-color: rgb(235, 155, 189, 0.9); /* den siste verdien gjør at fargen blir litt gjennomsiktig */
+    padding: 0.25rem 1rem;
+    color:white;       
+}
+
+.bakgrunn{
+    background-color: #efc8cf;
+    padding-top: 50px;
+}
+
+.ulikeSteder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin: 90px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding-bottom: 70px;    
+}
+
+h3{
+    margin-bottom: 10px;
+}
+.ulikeSteder img{
+    width: 100%;
+    height: 500px;
+}
+
+.heart-btn{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.heart-btn .heart-icon{
+    background: url(./Interesser/Bilder\ og\ video/heart.png); /* henter hjerte ikonet/animasjonen */
+    width: 100px;
+    height: 100px;
+    background-position: left;
+    cursor: pointer;
+    position: absolute;
+}
+
+.heart-btn .heart{
+    background-color: rgba(255,192,200,0);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease; /* all = alle egenskaper på elementet vil ha en overgangseffekt når de endres */
+                                /* 100ms = angir varigheten på overgangseffekten, altså 100ms */
+                                /* ease = overgangen vil starte sakte, akselere og bremse ned mot slutten */
+}
+
+.heart-btn .heart:hover{
+    background-color: rgba(255,192,200,0.7);
+}
+
+.heart-btn .numb{
+    font-size: "Roboto", sans-serif;
+    color: #888;
+    font-weight: 900;
+    margin-left: 6px;
+}
+
+/* vi sier animasjonen skal vare 0.7 sekunder, mens forwards sier at animasjonen skal stoppe ved slutten slik at den siste rammen
+blir værende som endelig stilling */
+.heart-btn .heart-icon.liked{
+    animation: like-anim 0.7s steps(28) forwards; /* setter så mange steps som vi har frammes minus 1 */
+}
+
+/* vi sier at rammene i animasjonen skal bevege seg til høyre */
+ @keyframes like-anim{
+    from{
+        background-position: left; /* sier at backgrunnsbilde skal starte til venstre */
+    }
+    to{
+        background-position: right; /* sier at bakgrunnsbilde skal ende til høyre */
+    }
+} 
+    
+.antrekkTips p, h3{
+    text-align: center;
+}
+
+.antrekkTips{
+    margin-top: 100px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tips{
+    background-color:#FEF2F4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    flex-basis: 31%; /* definerer størrelsen på flex-elementet, vil oppta 31% av bredden */
+    margin: 20px;
+    transition: 0.5s;
+    margin-bottom: 100px;
+}
+
+.tips:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(248,248,248);
+}
+
+footer div p{
+    padding: 10px;
+}
+
+footer div p a{
+    text-decoration: none;
+    color: black;
+}
+    
+footer div p:hover{
+    padding-left: 60px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+footer h3{
+    margin: 10px;
+}
+
+footer div h3{
+    border: solid 2px rgb(235, 155, 189);
+}
+
+.gotopbtn{
+    position: fixed; /* gjør at pilen forblir på samme sted */
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background:  rgb(235, 155, 189);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    right: 50px;
+    text-decoration: none;
+    text-align: center; 
+    line-height: 50px;
+    color: black;
+    font-size: 22px;
+    display: none;
+}
+
+.fa-arrow-up{ /* pil */
+    margin-top: 12px;
+}
+
+/* Kommentarfelt */
+.kommentarfelt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.kommentarfelt h3{
+    padding: 15px;
+}
+
+.kommentarfelt input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.kommentarfelt textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+/* når noe er i fokus, altså at man klikker på det f.eks */
+.kommentarfelt input:focus{
+    border: 1px solid palevioletred;
+   outline: 0; /* gjør at en gul linje blir borte rundt input elementet*/
+}
+
+.kommentarfelt textarea:focus{
+    border: 1px solid palevioletred;
+    outline: 0;
+}
+
+.kommentarfelt button{
+    border: 0;
+    padding: 10px 30px;
+    background: palevioletred;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.kommentarfelt button:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
+    /* Sliding bilder */
+.wrapper .carousel{
+    white-space: nowrap; /* gjør at bildene kommer ved siden av hverandre og at vi kan dra til siden med musen */
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden; /* gjør at bildene som går ut av skjermen blir gjemt */
+    scroll-behavior: smooth;
+}
+
+.carousel img{
+    width: calc(100% / 3); /* får bare 3 bilder som vises */
+    object-fit: cover;
+    height: 400px;
+    margin-left: 14px;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+/* blir ikke aktivert når de blir klikket på */
+.carousel.dragging img{
+    pointer-events: none;
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+.wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+
+.wrapper i:last-child{
+    right: -23px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    background: white;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    cursor: 1.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bildeSlide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-bottom: 90px;
+    margin: 50px;
+}
+    
+/* to do list */    
+.todolist form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh; /* gir mellomrom mellom overskriften og listen */
+}
+
+.todolist form input, .todolist form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+.todolist form button{
+    color: #ffc0cb;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* all = alle egenskaper på elementet vil ha en overgangseffekt når de endres */
+    /* 0.3s = angir varigheten på overgangseffekten, altså 0.3s */
+    /* ease = overgangen vil starte sakte, akselere og bremse ned mot slutten */
+}
+
+.todolist form button:hover{
+    background: #ffc0cb;
+    color: white;
+}
+
+.todo-container{
+    padding-bottom: 500px;
+}
+
+.todo-container, .kildeBoks{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.kildeBoks{
+    min-height: 40vh;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.kildeBoks h2{
+    padding: 20px 70px;
+    background-color: palevioletred;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0px;
+}
+
+.kildeBoks ul{
+    border-bottom: 20px solid palevioletred;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 370px;
+}
+
+.kildeBoks ul:hover li{
+    opacity: 0.2;
+}
+.kildeBoks ul li{
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.kildeBoks ul li:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    background-color: palevioletred;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); /* 0 horisontalt 5 vertikalt og spredning på 25 */
+    color: white;
+    opacity: 1;
+}
+
+.kildeBoks ul li span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: palevioletred;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px); /* plasserer seg oppover 2 px */
+}
+
+.kildeBoks ul li:hover span{
+    background-color: white;
+    color: palevioletred;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none; 
+}
+
+.todolist h1, .regnespill h1{
+    color: white;
+    margin: 0px;
+    padding: 30px;
+}
+
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1; /* gjør at knappene kommer ved siden av hverandre */
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.trash-btn, .complete-btn{
+    background: #ffc0cb;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: green;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none; /* gjør at vi også kan trykke på søppelkassa */
+}
+
+
+ @media all and (max-width:900px){
+    /* Navbar */
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+      nav ul{
+          float: left;
+          padding-left: 10px;
+      }
+  
+      nav ul li, nav ul ul li{
+          display: block;
+          width: 100%;
+      }
+  
+      nav ul ul{
+          top: 70px;
+          position: static; /* angir at posisjonen til undermenyen skal være den samme som den ville ha vært
+          i dokumentflyten uten å endre posisjoen til elementet i forhold til andre elementer */
+          border-top: none;
+          float: none; /* blir plassert ny linje */
+          display: none;
+          opacity: 1;
+          visibility: visible; 
+      }
+
+      nav ul ul li{
+        border-bottom: 0px;
+    }
+
+    nav ul ul a{
+         padding-left: 40px; 
+    }
+
+    .show{ /* undernettsidene */
+        display: block;
+        color: black;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer; /* forandrer musen */
+    }
+
+    .show:hover{
+        color: pink;
+    }
+
+    .icon{ /* hamburger */
+        display: block; 
+        color: black;
+        position: absolute;
+        right: 10px; 
+        margin-right: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+   
+    /* sier at det første a-elementet etter .show-elementene ikke skal vises , i tillegg til det første ul-elementet inni div-elementet, altså
+    alle undernettsidene */
+   .show + a, div > ul{ 
+        display: none; 
+    }   
+
+     [id^=btn]:checked + div > ul{ /* får undernettsidene til å vises når vi trykker på hamburgermenyen */
+        display: block; /* når vi bruker + så kaller vi på det div elementet som kommer rett etter input-elementet med id=btn
+        og alle ul-elementene inni div elementet */
+    }     
+
+    /* når input-elementet med id=btn-1/btn-2 er checked så skal det første ul-elementet vises */
+    [id^=btn-1]:checked + ul, [id^=btn-2]:checked + ul{
+        display: block;
+    }
+
+    main .forsidebilde{
+        background-image: url(./Bilder/hovedbilde2.png);
+    }
+
+    /* innledning på hjemsiden */
+    .innledning, .hboks{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hboks{
+        margin: 20px;
+        margin-top: 30px;
+    }
+    .hboks img{
+        width: 250px;
+        height: 150px;
+        
+    }
+
+    .mitt-liv{
+        margin-right: 0px;
+    }
+
+    footer, .drømme-d, .ulikeSteder, .nytt-prosjekt{
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .drømme-d video{
+        width: 310px;
+    }
+
+    .imgKjole{
+        width: 300px;
+        height: 370px;
+    }
+   
+    .drømme-d, .nytt-prosjekt{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .drømme-d p, .nytt-prosjekt p{ 
+        margin: 4px;
+    }
+
+    .ulikeSteder{
+        margin: 50px;
+        margin-bottom: 10px;
+    }
+
+    .ulikeSteder img{
+        height: 400px;
+    }
+
+    .ulikeSteder div .dato{
+        top: -380px;
+    }
+
+    .heart-btn{
+        margin-left: 7px;
+    }
+
+    .kommentarfelt{
+        margin: 15px;
+    }
+
+    .carousel img{
+        width: calc(100% / 1);
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .antrekkTips p{
+        margin: 30px;
+    }
+
+    .todolist form{
+       min-height: 10vh;
+    }
+
+    .todolist form input, .todolist form button{
+        font-size: 1.5rem;
+    }
+
+    .todo-container ul{
+        display: block;
+    }
+
+    .todo-item{
+        margin-right: 70px;   
+    }
+
+    .overskrift{
+        font-size: 55px;
+    }
+
+    .tips{
+        margin: 20px;
+    }
+
+    .kildeBoks ul{
+        display: block;
+        width: 90%;
+    }
+ }
+ 

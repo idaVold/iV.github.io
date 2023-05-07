@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Idas blogg</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <img src="../Bilder/logo.png" alt="logo"></div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span> <!-- logo for hamburgermeny -->
+            </label> <!-- man bruker label og input ved innskrivningsfelt, men i dette tilfelle handler deg om at når man 
+            klikker på et element vil noe dukke opp -->
+        <input type="checkbox" id="btn">
+            <div>
+                <ul> 
+                    <li> <a href="../index.html">Hjem</a></li> <!-- lager lister for hver undernettside -->
+                    <li>
+                        <label for="btn-1" class="show">Interesser +</label>
+                        <a href="#">Interesser</a>
+                        <input type="checkbox" id="btn-1">
+                        <ul>
+                            <li><a href="reise.html">Reise</a></li>
+                            <li><a href="mote.html">Mote</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <label for="btn-2" class="show">Skole +</label>
+                        <a href="#">Skole</a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="../Skole/tdl.html">To do list</a></li>
+                            <li><a href="../Skole/regnespill.html">Regnespill</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="../kilder.html">Kilder</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mote</h1>
+        <h2>Nyeste innlegg</h2>
+
+        <section class="nytt-prosjekt">
+        <div>
+            <div>
+                <h2>Nytt prosjekt</h2>
+                <h4>April 6, 2023 18:06</h4>
+            </div>
+            <p>
+                Dere, jeg kan ikke tro at jeg kan skrive dette men jeg har fått muligheten til å starte mitt eget merke! Det har vært en stor drøm for meg
+                så lenge jeg kan huske. Det er et klessmerke som skal innholde kolleksjoner med klær som jeg mener mangler på markede og som er nødvendige
+                for meg å ha i mitt klesskap. 
+                Jeg har ikke klart å bestemme meg for hva merket skal hete enda, men vi har begynt å designe noen plagg. Dermed trenger jeg deres hjelp. 
+                Hvilken farge på denne kjolen synes dere er finest? Jeg ønsker å lage en kjole som er perfekt til bruk nå som sommeren nærmer seg. Men jeg 
+                klarer ikke å bestemme meg for hvilken farge jeg liker best. Legg gjerne igjen en kommentar i kommentarfeltet. 
+            </p>
+        </div>
+
+            <div>
+                <div>
+                 <img src="./Bilder og video/kjoleB.png" alt="Beige kjole" class="imgKjole">
+                </div>
+            <div>
+            <button data-bilde="./Bilder og video/kjoleB.png" class="beige">Beige</button>
+            <button data-bilde="./Bilder og video/kjoleG.png" class="grønn">Grønn</button>
+            <button data-bilde="./Bilder og video/kjoleR.png" class="rosa">Rosa</button>
+            <button data-bilde="./Bilder og video/kjoleL.png" class="lilla">Lilla</button>
+            </div>
+            </div>
+        </section>
+
+        <section class="bakgrunn">
+        <h2>Antrekk inspirasjon</h2>
+        <section class="bildeSlide">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img src="./Bilder og video/antrekk6.png" alt="Antrekk" draggable="false">
+                    <img src="./Bilder og video/antrekk2.png" alt="Antrekk" draggable="false">
+                    <img src="./Bilder og video/antrekk3.png" alt="Antrekk" draggable="false">
+                    <img src="./Bilder og video/antrekk4.png" alt="Antrekk" draggable="false">
+                    <img src="./Bilder og video/antrekk5.png" alt="Antrekk" draggable="false">
+                    <img src="./Bilder og video/antrekk1.png" alt="Antrekk" draggable="false">
+                    <img src="./Bilder og video/antrekk7.png" alt="Antrekk" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+    </section>
+       
+   
+    <section class="antrekkTips">
+        <h2>Hvordan sette sammen ett antrekk</h2>
+        <p>I min mening er det to ting man bør tenker over når man skal finne ett antrekk</p>
+        <div class="row">
+            <div class="tips">
+                <h3>Farger</h3>
+                <p>Når man skal finne frem et antrekk er fargevalg veldig viktig. Jeg liker veldig godt å gå i nøytrale farger ettersom at
+                    man ikke går like lei av sånne plagg. I tillegg til at det er mye lettere å sette sammen antrekk siden fargene går lett sammen.
+                </p>
+            </div>
+            <div class="tips">
+                <h3>Komfort</h3>
+                <p>En annen viktig ting å tenke over er komfort. Det å ha på et antrekk som man er komfertabel i vil atomatisk 
+                    gjøre antrekket ditt bedre. Grunnen til det er fordi når du komfetabel så føler man seg bedre i klærne du har på deg. 
+                </p>
+            </div>
+        </div>
+    </section>
+       
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <section>
+        <div class="kommentarfelt">
+            <h2>Kommenter</h2>
+          <form action="https://formsubmit.co/idavold05@gmail.com" method="POST"> 
+                <input type="text" class="brukerNavn" required name="full_name" placeholder="Ditt navn...">
+                <input type="email" name="email" class="email" required placeholder="Email adresse...">
+                <textarea name="comment" class="kommentar" cols="30" rows="10" placeholder="Skriv inn din kommentar"></textarea>
+                <button type="submit">Send kommentar</button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h3>Kontakt</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i>Nummer: +47 45027364</p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i>E-post: idavold@gmail.com</p>
+        </div>
+        <div class="foot">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>Medier</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.instagram.com/">Instagram: Ida.Vold</a></p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://nb-no.facebook.com/">Facebook: Ida.Vold</a></p>
+            </div>
+        <div class="foot">
+            <i class="fa-regular fa-user"></i>
+            <h3>Hjelp</h3>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/cookies/">Informasjonskapsler</a></p>
+            <p><i class="fa-solid fa-chevron-up fa-rotate-90"></i><a href="https://www.datatilsynet.no/rettigheter-og-plikter/hva-er-personvern/">Personvern</a></p>
+        </div>
+    </footer>
+    </section>
+    
+    <script>
+        //bytting av bilder
+    let rosa = document.querySelector(".rosa")
+    let beige = document.querySelector(".beige")
+    let gronn = document.querySelector(".grønn")
+    let lilla = document.querySelector(".lilla")
+    let imgKjole = document.querySelector(".imgKjole")
+
+    rosa.addEventListener("click", skiftbilde)  
+    beige.addEventListener("click", skiftbilde)
+    gronn.addEventListener("click", skiftbilde)
+    lilla.addEventListener("click", skiftbilde)
+
+    function skiftbilde(evt){
+        let button = evt.target
+        let kjoleBilde = button.getAttribute("data-bilde")
+        imgKjole.src = kjoleBilde
+    } 
+    </script>
+
+    <script src="../script.js"></script>
+    <script src="./script.js"></script>   
+</body>
